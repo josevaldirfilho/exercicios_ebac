@@ -1,0 +1,40 @@
+@use 'config/reset.scss';
+@use 'config/variaveis.scss';
+
+
+header .container,
+.products {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  background-color: variaveis.$corPrincipal
+}
+
+section .container {
+  display: block;
+  width: 1000px;
+  margin: auto;
+}
+
+body {
+  background-color: variaveis.$corDeFundo;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+
+  .container,
+  .products {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    background-color: variaveis.$corSecundaria
+  }
+
+}
