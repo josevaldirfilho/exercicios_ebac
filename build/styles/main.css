@@ -7,10 +7,10 @@
 body {
   background-color: #f5f6fa;
 }
-li {
+body li {
   list-style: none;
 }
-.container {
+body .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
@@ -64,9 +64,9 @@ section {
   text-decoration: none;
 }
 .product-button:hover {
-  background-color: #4cd137;
+  background-color: #44bd32;
 }
-@media screen and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
@@ -75,7 +75,7 @@ section {
     column-gap: 3%;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .products {
     display: block;
   }
